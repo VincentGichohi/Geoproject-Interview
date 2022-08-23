@@ -31,8 +31,12 @@ def num_num(b):
   #   print(-1)
   
   print(new_b[new_value])
-  print(new_b.keys())
+  new_array = new_b.keys()
   
+  if new_array in new_b.keys():
+    print(new_b.index(new_array))
+  else:
+    print(-1)
   
 num_num(a)
 
